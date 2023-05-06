@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Share Modal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+       <div class="wrapper">
+        <!-- First circle -->
+        <div class="circle1"></div>
+        <!-- Second Circle -->
+        <div class="circle2"></div>
+
+        <!-- Card -->
+        <div class="cardcontainer">
+            <!-- Image -->
+            <div class="imagecontainer">
+                <img src="photo1.jpg" alt="">
+            </div>
+            <!-- Name -->
+            <h2 class="name">Vishal Sharma</h2>
+            <!-- Designation -->
+            <h3 class="designation">Student,Second Year</h3>
+
+            <!-- sharecontainer -->
+            <div class="bottom-group">
+                <button onclick="openModal()" class="btn-share btn-card">
+                  <i class="fa-solid fa-share"></i>
+                  <div>share my profile</div>
+                </button>
+        
+                <button class="btn-follow btn-card">Follow me</button>
+              </div>
+        </div>
+
+
+
+        <!-- MODAL Component -->
+        <div class="modal">
+            <div class="modal-header">
+                <h1>Share My Profile</h1>
+                <div>
+                  <i onclick="closeModal()" class="fa-solid fa-xmark close"></i>
+                </div>
+              </div>
+
+
+              <div>
+
+                <h3>Share this via</h3>
+
+               <!-- Icon Container -->
+                <div class="icon-container">
+                    <a href="https://www.linkedin.com/in/vishal-sharma-767289228/" target="_blank" class="icon" id="linkedin">
+                      <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com/VishalS39553111" target="_blank" class="icon" id="twitter">
+                      <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#" class="icon" id="instagram" target="_blank">
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://github.com/vishal-811" target="_blank" class="icon" id="github">
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="#" class="icon" target="_blank" id="telegram">
+                      <i class="fa-brands fa-telegram"></i>
+                    </a>
+                  </div>
+              </div>
+        </div>
+
+        <!-- Overlay -->
+        <div class="overlay" onclick="closeModal()"></div>
+       </div>
+
+       <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+       <script src="index.js"></script>
+</body>
+</html>
